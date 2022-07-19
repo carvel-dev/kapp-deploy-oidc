@@ -28,7 +28,7 @@ jobs:
         uses: google-github-actions/get-gke-credentials@v0.4.0
         with:
           cluster_name: cluster-yash
-          location: us-central1-a
+          location: us-central1-c
 
       - id: install-kapp
         uses: vmware-tanzu/carvel-setup-action@v1
