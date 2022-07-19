@@ -21,8 +21,8 @@ jobs:
         name: 'Authenticate to Google Cloud'
         uses: 'google-github-actions/auth@v0.4.0'
         with:
-          workload_identity_provider: 'projects/123456789/locations/global/workloadIdentityPools/test-release-pool/providers/test-carvel-github-provider'
-          service_account: 'test-service-account@test-project.iam.gserviceaccount.com'
+          workload_identity_provider: 'projects/774923046234/locations/global/workloadIdentityPools/test-kapp-deploy-oidc-pool/providers/test-kapp-deploy-provider'
+          service_account: 'kapp-deploy-service-account@sound-yew-356306.iam.gserviceaccount.com'
 
       - id: get-gke-credentials
         uses: google-github-actions/get-gke-credentials@v0.4.0
