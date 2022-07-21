@@ -1,4 +1,4 @@
-name: oidc action GCP
+name: deploy using kapp
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - "v*"
 
 jobs:
-  Get_OIDC_ID_token:
+  deploy:
     runs-on: ubuntu-latest
 
     permissions:
